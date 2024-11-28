@@ -1,0 +1,54 @@
+.plans-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.completed-column,
+.incomplete-column {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.dropdown {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.sidebar-icon {
+  font-size: 20px;
+}
+
+.completed-icon {
+  color: white;
+}
+
+.incomplete-icon {
+  color: white;
+}
+
+.dropdown-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.dropdown-description {
+  font-size: 14px;
+  color: #555;
+}
