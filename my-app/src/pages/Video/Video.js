@@ -1,7 +1,7 @@
 import React from 'react';
-import './Gallery.css';
+import './Video.css';
 
-const Gallery = () => {
+const Video = () => {
   return (
     <div className="empty-page">
 
@@ -9,4 +9,4 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;
+export default Video;

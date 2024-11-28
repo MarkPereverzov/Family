@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaHome, FaImage, FaCamera, FaClipboardList, FaTimes, FaBars } from 'react-icons/fa';
+import { FaHome, FaImage, FaCamera, FaClipboardList, FaTimes, FaBars, FaPhotoVideo } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
 
@@ -19,37 +19,50 @@ const Sidebar = () => {
       </div>
 
       <div className="button-container">
-        <div className="sidebar-button">
-          <div className="sidebar-icon-container">
-            <FaHome className="sidebar-icon" />
+        <Link to="/home" className="sidebar-link">
+          <div className="sidebar-button">
+            <div className="sidebar-icon-container">
+              <FaHome className="sidebar-icon" />
+            </div>
+            {isSidebarOpen && <div className="sidebar-title text-body-regular">Главная</div>}
           </div>
-          {isSidebarOpen && <div className="sidebar-title text-body-regular">Главная</div>}
-          <Link to="/" className="sidebar-link" />
-        </div>
+        </Link>
 
-        <div className="sidebar-button">
-          <div className="sidebar-icon-container">
-            <FaImage className="sidebar-icon" />
+        <Link to="/gallery" className="sidebar-link">
+          <div className="sidebar-button">
+            <div className="sidebar-icon-container">
+              <FaImage className="sidebar-icon" />
+            </div>
+            {isSidebarOpen && <div className="sidebar-title text-body-regular">Галерея</div>}
           </div>
-          {isSidebarOpen && <div className="sidebar-title text-body-regular">Галерея</div>}
-          <Link to="/gallery" className="sidebar-link" />
-        </div>
+        </Link>
 
-        <div className="sidebar-button">
-          <div className="sidebar-icon-container">
-            <FaCamera className="sidebar-icon" />
+        <Link to="/screenshots" className="sidebar-link">
+          <div className="sidebar-button">
+            <div className="sidebar-icon-container">
+              <FaCamera className="sidebar-icon" />
+            </div>
+            {isSidebarOpen && <div className="sidebar-title text-body-regular">Скриншоты</div>}
           </div>
-          {isSidebarOpen && <div className="sidebar-title text-body-regular">Скриншоты</div>}
-          <Link to="/screenshots" className="sidebar-link" />
-        </div>
+        </Link>
 
-        <div className="sidebar-button">
-          <div className="sidebar-icon-container">
-            <FaClipboardList className="sidebar-icon" />
+        <Link to="/plans" className="sidebar-link">
+          <div className="sidebar-button">
+            <div className="sidebar-icon-container">
+              <FaClipboardList className="sidebar-icon" />
+            </div>
+            {isSidebarOpen && <div className="sidebar-title text-body-regular">Планы</div>}
           </div>
-          {isSidebarOpen && <div className="sidebar-title text-body-regular">Планы</div>}
-          <Link to="/plans" className="sidebar-link" />
-        </div>
+        </Link>
+
+        <Link to="/videos" className="sidebar-link">
+          <div className="sidebar-button">
+            <div className="sidebar-icon-container">
+              <FaPhotoVideo className="sidebar-icon" />
+            </div>
+            {isSidebarOpen && <div className="sidebar-title text-body-regular">Видеозаписи</div>}
+          </div>
+        </Link>
       </div>
 
       <div className="sidebar-footer"></div>

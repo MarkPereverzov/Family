@@ -40,6 +40,12 @@
   height: 50px;
 }
 
+.sidebar-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .sidebar-button {
   display: flex;
   flex-direction: row;
