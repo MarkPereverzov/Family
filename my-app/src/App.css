@@ -1,25 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300, 400, 600, 700, 800, 900");
+
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
+  padding: 0;
+  height: 100vh;
+  background: white;
+  z-index: 100;
 }
 
 .App {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   align-content: center;
   height: 100vh;  
 }
 
-.BlockContainer {
+.links-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   width: 90%;
   height: 100vh;
   text-align: center;
   font-size: 1.2rem;
+}
+
+svg {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+}
+
+.button {
+  z-index: 100;
+  background-color: #ff0083;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+  text-align: center;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  border-radius: 6px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-shadow: 0 15px 40px rgba(255, 0, 131, 0.5);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #d9006a;
+  transform: translateY(-5px);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 10px 30px rgba(255, 0, 131, 0.4);
+}
+
+.button:focus {
+  outline: none;
+}
+
+.text-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 1.4;
+  color: white;
+  margin: 0;
+}
+
+.text-body-large {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.6;
+  color: white;
+  margin: 0;
+}
+
+.text-body-medium {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: white;
+  margin: 0;
+}
+
+.text-body-regular {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: white;
+  margin: 0;
+}
+
+.text-body-small {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: white;
+  text-align: left;
+  margin: 0;
 }

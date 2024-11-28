@@ -1,0 +1,89 @@
+.sidebar {
+  display: flex;
+  position: absolute;
+  left: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  background-color: #333;
+  z-index: 100;
+  transition: width 0.3s ease;
+  width: 225px;
+}
+
+.sidebar.closed {
+  display: flex;
+  justify-content: space-between !important;
+  width: 70px;
+  justify-content: center;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  height: 50px;
+  position: relative;
+}
+
+.sidebar-header .sidebar-icon-container {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.sidebar-footer {
+  text-align: center;
+  padding: 10px;
+  height: 50px;
+}
+
+.sidebar-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button-container {
+  width: 100%;
+}
+
+.sidebar-button:hover {
+  background-color: #ff0083;
+}
+
+.sidebar-icon-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-button:hover .sidebar-icon-container {
+  transform: scale(1.1);
+}
+
+.sidebar-title {
+  color: white;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-icon {
+  width: 32px;
+  height: 32px;
+  color: white;
+  position: static;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-button:hover .sidebar-icon {
+  transform: scale(1.1);
+}
